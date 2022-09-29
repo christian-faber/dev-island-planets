@@ -1,0 +1,135 @@
+@media screen and (max-width: 780px) {
+  * {
+    background-color: black;
+    background-image: url("../assets/background-stars.svg");
+    font-family: "League Spartan";
+    text-transform: uppercase;
+  }
+
+  .app {
+    color: white;
+  }
+
+  button {
+    color: white;
+  }
+  button:hover {
+    background-color: aqua;
+    color: white;
+  }
+
+  .image {
+    display: flex;
+
+    border: solid 1px white;
+  }
+
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px lightgray solid;
+  }
+
+  .nav {
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    padding: 10px;
+    font-family: "Antonio";
+  }
+
+  .nav > a {
+    display: none;
+    padding: 8px;
+    color: #ffffffcf;
+    text-decoration: none;
+  }
+
+  .content {
+  }
+
+  button > span {
+    color: lightslategray;
+    background: none;
+  }
+
+  .buttons > button {
+  }
+
+  .text {
+    font-family: "Antonio";
+    text-transform: none;
+  }
+
+  .buttons {
+  }
+
+  .summary {
+  }
+
+  .frame {
+    /* display: flex;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    background: none;
+    max-height: 420px; */
+  }
+
+  .stats {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-content: center; */
+  }
+
+  .stats > div {
+    /* position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: solid 0.25px #ffffff75;
+    height: 6vh;
+    width: 30vw;
+    padding: 10px;
+    top: 100px;
+    margin: 10px; */
+  }
+
+  .stat-name {
+    /* font-size: 10px;
+    margin: 0px;
+    color: #ffffff75; */
+  }
+
+  .stat-num {
+    /* font-size: 20px;
+    font-family: "Antonio"; */
+  }
+
+  .img-surface {
+    /* position: absolute;
+    top: 105px;
+    left: 250px;
+    background: none; */
+  }
+
+  .img-planet {
+    /* position: relative;
+    background: none; */
+  }
+
+  .name {
+    /* font-size: 70px;
+    font-weight: 300; */
+  }
+
+  .info {
+    /* width: 50%;
+      margin: 5%; */
+  }
+}
