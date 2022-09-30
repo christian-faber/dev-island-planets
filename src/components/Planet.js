@@ -8,6 +8,7 @@ import { Stats } from "./Stats.js";
 export const Planet = () => {
   const { planetName } = useParams();
   const [planet, setPlanet] = useState([]);
+  const [view, setView] = useState("overview");
 
   useEffect(() => {
     fetch(`https://api.api-ninjas.com/v1/planets?name=${planetName}`, {
@@ -23,8 +24,13 @@ export const Planet = () => {
 
   return (
     <div className="planet">
-      <Navbar planet={planet} setPlanet={setPlanet} />
-      <Content planet={planet} />
+      <Navbar
+        planet={planet}
+        setPlanet={setPlanet}
+        view={view}
+        setView={setView}
+      />
+      <Content planet={planet} view={view} setView={setView} />
       <Stats className="stat" planet={planet} />
     </div>
   );
