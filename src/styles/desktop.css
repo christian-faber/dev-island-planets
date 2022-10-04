@@ -150,34 +150,7 @@
   .hamburger {
     display: none;
   }
-  .bm-burger-button {
-    display: none;
-  }
-  .bm-burger-bars {
-    display: none;
-  }
-  .bm-burger-bars-hover {
-    display: none;
-  }
-  .bm-cross-button {
-    display: none;
-  }
-  .bm-cross {
-    display: none;
-  }
-  .bm-menu-wrap {
-    display: none;
-  }
-  .bm-menu {
-    display: none;
-  }
-  .bm-item {
-    display: none;
-  }
   .btn-mbl {
-    display: none;
-  }
-  .brgr-box {
     display: none;
   }
 }

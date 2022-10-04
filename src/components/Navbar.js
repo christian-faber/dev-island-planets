@@ -1,25 +1,42 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { slide as Menu } from "react-burger-menu";
+import { Squash as Hamburger } from "hamburger-react";
+// import { Button } from "./Button";
 // import { useParams } from "react-router-dom";
 
 export const Navbar = (setView) => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className="navBar">
-      <h2 className="title">THE PLANETS</h2>
-      <div className="nav">
-        <Link to="/mercury">MERCURY</Link>
-        <Link to="/venus">VENUS</Link>
-        <Link to="/earth">EARTH</Link>
-        <Link to="/mars">MARS</Link>
-        <Link to="/jupiter">JUPITER</Link>
-        <Link to="/saturn">SATURN</Link>
-        <Link to="/uranus">URANUS</Link>
-        <Link to="/neptune">NEPTUNE</Link>
-        <Link to="/pluto">PLUTO</Link>
-      </div>
-      <div className="brgr-box">
-        <Menu />
+      <div className="mbl-top">
+        <h2 className="title">THE PLANETS</h2>
+        <div className="nav">
+          <Link to="/mercury">MERCURY</Link>
+          <Link to="/venus">VENUS</Link>
+          <Link to="/earth">EARTH</Link>
+          <Link to="/mars">MARS</Link>
+          <Link to="/jupiter">JUPITER</Link>
+          <Link to="/saturn">SATURN</Link>
+          <Link to="/uranus">URANUS</Link>
+          <Link to="/neptune">NEPTUNE</Link>
+          <Link to="/pluto">PLUTO</Link>
+        </div>
+        <div className="hamburger">
+          <Hamburger toggled={isOpen} toggle={setOpen} />
+          {isOpen && (
+            <div className="mbl-nav">
+              <Link to="/mercury">MERCURY</Link>
+              <Link to="/venus">VENUS</Link>
+              <Link to="/earth">EARTH</Link>
+              <Link to="/mars">MARS</Link>
+              <Link to="/jupiter">JUPITER</Link>
+              <Link to="/saturn">SATURN</Link>
+              <Link to="/uranus">URANUS</Link>
+              <Link to="/neptune">NEPTUNE</Link>
+              <Link to="/pluto">PLUTO</Link>
+            </div>
+          )}
+        </div>
       </div>
       <div className="btn-mbl">
         <button onClick={() => setView("overview")}>

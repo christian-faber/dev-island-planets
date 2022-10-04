@@ -33,15 +33,17 @@
     border-bottom: 1px lightgray solid;
     flex-direction: column;
     align-items: center;
+    padding: 1px;
   }
 
   .nav {
     display: flex;
     text-align: center;
     justify-content: right;
-    padding: 10px;
+    padding: 9px;
     font-family: "Antonio";
-    z-index: 5;
+    z-index: 0;
+    background: none;
   }
 
   .nav > a {
@@ -145,8 +147,8 @@
 
   .img-surface {
     position: absolute;
-    top: 105px;
-    left: 250px;
+    top: 140px;
+    left: 200px;
     background: none;
     height: 200px;
   }
@@ -171,34 +173,7 @@
   .hamburger {
     display: none;
   }
-  .bm-burger-button {
-    display: none;
-  }
-  .bm-burger-bars {
-    display: none;
-  }
-  .bm-burger-bars-hover {
-    display: none;
-  }
-  .bm-cross-button {
-    display: none;
-  }
-  .bm-cross {
-    display: none;
-  }
-  .bm-menu-wrap {
-    display: none;
-  }
-  .bm-menu {
-    display: none;
-  }
-  .bm-item {
-    display: none;
-  }
   .btn-mbl {
-    display: none;
-  }
-  .brgr-box {
     display: none;
   }
 }
