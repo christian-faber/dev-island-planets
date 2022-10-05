@@ -36,7 +36,7 @@
     padding: 1px;
   }
 
-  .nav {
+  .nav-links {
     display: flex;
     text-align: center;
     justify-content: right;
@@ -46,7 +46,7 @@
     background: none;
   }
 
-  .nav > a {
+  .nav-links > a {
     padding: 8px;
     color: #ffffffcf;
     text-decoration: none;

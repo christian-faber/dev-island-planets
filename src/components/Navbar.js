@@ -8,9 +8,9 @@ export const Navbar = (setView) => {
   const [isOpen, setOpen] = useState(false);
   return (
     <div className="navBar">
-      <div className="mbl-top">
+      <div className="nav">
         <h2 className="title">THE PLANETS</h2>
-        <div className="nav">
+        <div className="nav-links">
           <Link to="/mercury">MERCURY</Link>
           <Link to="/venus">VENUS</Link>
           <Link to="/earth">EARTH</Link>
@@ -39,15 +39,9 @@ export const Navbar = (setView) => {
         </div>
       </div>
       <div className="btn-mbl">
-        <button onClick={() => setView("overview")}>
-          <span>01</span>Overview
-        </button>
-        <button onClick={() => setView("structure")}>
-          <span>02</span>Internal Structure
-        </button>
-        <button onClick={() => setView("geology")}>
-          <span>03</span>Surface Geology
-        </button>
+        <button onClick={() => setView("overview")}>Overview</button>
+        <button onClick={() => setView("structure")}>Internal Structure</button>
+        <button onClick={() => setView("geology")}>Surface Geology</button>
       </div>
     </div>
   );

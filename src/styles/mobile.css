@@ -9,6 +9,12 @@
   .app {
     color: white;
   }
+  /* .mbl-title {
+    color: lightgray;
+  } */
+  .title {
+    /* display: none; */
+  }
 
   button {
     color: white;
@@ -28,24 +34,32 @@
   .img {
     width: 50%;
   }
+
   .navBar {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px #d3d3d3 solid;
     flex-direction: column;
     z-index: 1001;
+    /* display: none; */
   }
 
   .nav {
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    /* align-items: center;
     display: flex;
     text-align: center;
     justify-content: right;
     padding: 10px;
-    font-family: "Antonio";
+    font-family: "Antonio"; */
+    /* display: none; */
   }
 
-  .nav > a {
+  .nav-links > a {
     display: none;
     padding: 8px;
     color: #ffffffcf;
@@ -56,12 +70,6 @@
     margin: 1% 5% 5%;
   }
 
-  button > span {
-    color: lightslategray;
-    background: none;
-    display: none;
-  }
-
   .text {
     font-family: "Antonio";
     text-transform: none;
@@ -70,8 +78,9 @@
   .buttons {
     display: none;
   }
+
   .btn-mbl {
-    height: 5%;
+    height: 10%;
     display: flex;
     border: none;
     justify-content: center;
@@ -79,10 +88,7 @@
 
   .btn-mbl > .buttons {
     display: flex;
-  }
-
-  .btn-mbl > button > span {
-    display: none;
+    height: 3vh;
   }
 
   .frame > div {
@@ -141,6 +147,7 @@
     font-size: 50px;
     font-weight: 300;
     margin: 5px 0 2px 0;
+    z-index: 10000;
   }
 
   .info {
@@ -149,28 +156,32 @@
     flex-direction: column;
     align-items: center;
   }
-  .mbl-top {
+
+  /* .mbl-top {
     display: flex;
     justify-content: space-between;
-  }
+  } */
+
   .mbl-nav {
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 0;
-    width: 100%;
+    width: 30%;
     background-color: #181818;
     border-top: 2px lightgray;
+    z-index: 1000;
   }
+
   .mbl-nav > * {
-    padding-left: 70%;
+    padding-left: 20%;
     color: white;
     font-family: "Antonio";
     text-decoration: none;
   }
+
   .mbl-nav > *:hover {
     text-decoration: underline;
     color: rgb(202, 5, 202);
-    z-index: 10000;
   }
 }

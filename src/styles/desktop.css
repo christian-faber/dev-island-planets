@@ -28,12 +28,15 @@
   }
 
   .navBar {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     border-bottom: 1px lightgray solid;
   }
-
   .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links {
     display: flex;
     text-align: center;
     justify-content: right;
@@ -41,10 +44,14 @@
     font-family: "Antonio";
   }
 
-  .nav > a {
+  .nav-links > a {
     padding: 8px;
     color: #ffffffcf;
     text-decoration: none;
+  }
+
+  .mbl-top {
+    display: none;
   }
 
   .content {
@@ -133,9 +140,10 @@
 
   .img-surface {
     position: absolute;
-    top: 105px;
+    top: 240px;
     left: 250px;
     background: none;
+    width: 150px;
   }
 
   .img-planet {
@@ -146,6 +154,7 @@
   .name {
     font-size: 70px;
     font-weight: 300;
+    margin-bottom: 30px;
   }
   .hamburger {
     display: none;
