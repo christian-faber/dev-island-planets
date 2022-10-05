@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Squash as Hamburger } from "hamburger-react";
+import { Button } from "./Button";
 // import { Button } from "./Button";
 // import { useParams } from "react-router-dom";
 
@@ -39,9 +40,7 @@ export const Navbar = (setView) => {
         </div>
       </div>
       <div className="btn-mbl">
-        <button onClick={() => setView("overview")}>Overview</button>
-        <button onClick={() => setView("structure")}>Internal Structure</button>
-        <button onClick={() => setView("geology")}>Surface Geology</button>
+        <Button setView={setView} />
       </div>
     </div>
   );
