@@ -5,7 +5,7 @@ import { Button } from "./Button";
 // import { Button } from "./Button";
 // import { useParams } from "react-router-dom";
 
-export const Navbar = (setView) => {
+export const Navbar = ({ setView }) => {
   const [isOpen, setOpen] = useState(false);
   return (
     <div className="navBar">
